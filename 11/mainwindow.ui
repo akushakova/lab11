@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>301</width>
+    <height>109</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLineEdit" name="secValue">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>10</y>
+      <width>113</width>
+      <height>24</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="secLbl">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>52</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Секунд</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="calcBtn">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>10</y>
+      <width>101</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Розрахувати</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="minLbl">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>51</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Хвилин</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="minValue">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>40</y>
+      <width>113</width>
+      <height>24</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>301</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="loadFileMenuItem">
+    <property name="title">
+     <string>Файл</string>
+    </property>
+    <addaction name="loadFile"/>
+    <addaction name="saveFile"/>
+   </widget>
+   <addaction name="loadFileMenuItem"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="loadFile">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset theme="QIcon::ThemeIcon::DocumentOpen"/>
+   </property>
+   <property name="text">
+    <string>Відкрити</string>
+   </property>
+   <property name="shortcutContext">
+    <enum>Qt::ShortcutContext::ApplicationShortcut</enum>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="saveFile">
+   <property name="icon">
+    <iconset theme="QIcon::ThemeIcon::DocumentSave"/>
+   </property>
+   <property name="text">
+    <string>Зберегти</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
